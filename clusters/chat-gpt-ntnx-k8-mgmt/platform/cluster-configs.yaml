@@ -4,9 +4,11 @@ metadata:
   name: cluster-configs
 data:
   cluster_name: "chat-gpt-ntnx-k8-mgmt"
-  environment: "prod"
+  environment: "non-prod"
   cluster_profile: "llm-management"
   nginx_ingress_version: "4.8.3"
+  cert_manager_version: "v1.13.5"
+  cert_manager_issuer_name: "selfsigned-cluster-issuer"
   milvus_version: "4.1.13"
   milvus_objects_bucket_name: "milvus"
   kyverno_version: "3.1.4"
